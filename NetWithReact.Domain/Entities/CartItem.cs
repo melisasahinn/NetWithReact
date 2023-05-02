@@ -12,10 +12,10 @@ namespace NetWithReact.Domain.Entities
     public class CartItem : BaseEntity
     {
         [Column("shopping_session_id")]
-        public int ShoppingSessionId { get; set; }
+        public long ShoppingSessionId { get; set; }
 
         [Column("product_id")]
-        public int ProductId { get; set; }
+        public long ProductId { get; set; }
 
         [ForeignKey("ProductId")]
         public Product Product { get; set; }
