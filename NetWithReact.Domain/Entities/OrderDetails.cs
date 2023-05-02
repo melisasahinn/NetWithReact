@@ -24,7 +24,7 @@ namespace NetWithReact.Domain.Entities
         public User User { get; set; }
 
         [ForeignKey("payment_details_id")]
-        public PaymentDetails  PaymentDetails { get; set; }
+        public PaymentDetails PaymentDetails { get; set; }
 
     }
 }

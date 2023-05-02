@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace NetWithReact.Domain.Entities
 {
-    public class UserPayment:BaseEntity
+    [Table("user_payment")]
+    public class UserPayment : BaseEntity
     {
         [Column("user_id")]
         public long UserId { get; set; }

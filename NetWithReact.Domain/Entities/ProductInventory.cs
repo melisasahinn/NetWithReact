@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace NetWithReact.Domain.Entities
 {
     [Table("product_inventory")]
-    public class ProductInventory :BaseEntity
+    public class ProductInventory : BaseEntity
     {
         [Column("quantity")]
         public long Quantity { get; set; }

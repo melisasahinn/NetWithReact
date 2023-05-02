@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace NetWithReact.Domain.Entities
 {
     [Table("OrderItems")]
-    public class OrderItems:BaseEntity
+    public class OrderItems : BaseEntity
     {
         [Column("order_id")]
         public long OrderId { get; set; }
@@ -21,7 +21,7 @@ namespace NetWithReact.Domain.Entities
         public long Quantity { get; set; }
 
         [ForeignKey("order_id")]
-        public OrderDetails  OrderDetails { get; set; }
+        public OrderDetails OrderDetails { get; set; }
 
         [ForeignKey("product_id")]
         public Product Product { get; set; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace NetWithReact.Domain.Entities
 {
     [Table("user")]
-    public class User:BaseEntity
+    public class User : BaseEntity
     {
         [Column("user_name")]
         public string UserName { get; set; }

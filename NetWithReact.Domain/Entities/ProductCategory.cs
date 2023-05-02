@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace NetWithReact.Domain.Entities
 {
     [Table("product_category")]
-    public class ProductCategory :BaseEntity
+    public class ProductCategory : BaseEntity
     {
         [Column("name")]
         public string Name { get; set; }
