@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NetWithReact.Application\NetWithReact.Application.csproj" />
     <ProjectReference Include="..\NetWithReact.Domain\NetWithReact.Domain.csproj" />
   </ItemGroup>
 
