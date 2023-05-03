@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NetWithReact.Domain\NetWithReact.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

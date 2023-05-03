@@ -11,7 +11,7 @@ namespace NetWithReact.Application.Common.Interfaces.Persistence.Common
         TEntity GetById (long id, bool ShowDeleted = false);
         TEntity Add(TEntity entity);
         TEntity Update(TEntity entity, bool deletion = false);
-        TEntity Delete(long id);
+        TEntity Delete(TEntity entity);
         List<TEntity> Get(int queryPage, int querySize);
         int Count();
     }

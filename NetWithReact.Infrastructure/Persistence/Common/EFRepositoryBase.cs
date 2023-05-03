@@ -35,9 +35,12 @@ namespace NetWithReact.Infrastructure.Persistence.Common
             return _dbSet.Count();
         }
 
-        public TEntity Delete(long id)
+        public TEntity Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            entity.IsDeleted= true;
+
+            this.Update(entity, deletion: true);
+            return entity;
         }
 
         public List<TEntity> Get(int queryPage, int querySize)
@@ -64,7 +67,9 @@ namespace NetWithReact.Infrastructure.Persistence.Common
 
         public TEntity Update(TEntity entity, bool deletion = false)
         {
-            throw new NotImplementedException();
+            _dbSet.Update(entity);
+            _dbContext.SaveChanges();
+            return entity;
         }
     }
 }
