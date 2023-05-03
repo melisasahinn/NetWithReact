@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NetWithReact.Application.Common.Interfaces.Persistence.Common;
+using NetWithReact.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NetWithReact.Application.Common.Interfaces.Persistence
 {
-    internal interface IOrderItemsRepository
+    public interface IOrderItemsRepository : IRepositoryBase<OrderItems>
     {
     }
 }
