@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NetWithReact.Infrastructure
+namespace NetWithReact.Infrastructure.Persistence
 {
     public class NetWithReactDbContext : DbContext
     {

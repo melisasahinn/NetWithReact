@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NetWithReact.Infrastructure.Persistence.Common
+namespace NetWithReact.Infrastructure.Persistence.Repositories.Common
 {
     public class EFRepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : BaseEntity
     {
@@ -22,7 +22,7 @@ namespace NetWithReact.Infrastructure.Persistence.Common
 
         public TEntity Add(TEntity entity)
         {
-            if(_dbSet.Add(entity) is { } EntityEntry)
+            if (_dbSet.Add(entity) is { } EntityEntry)
             {
                 _dbContext.SaveChanges();
                 return EntityEntry.Entity;
@@ -37,9 +37,9 @@ namespace NetWithReact.Infrastructure.Persistence.Common
 
         public TEntity Delete(TEntity entity)
         {
-            entity.IsDeleted= true;
+            entity.IsDeleted = true;
 
-            this.Update(entity, deletion: true);
+            Update(entity, deletion: true);
             return entity;
         }
 
