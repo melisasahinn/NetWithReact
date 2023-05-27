@@ -17,4 +17,52 @@
 		<ProjectReference Include="..\NetWithReact.Domain\NetWithReact.Domain.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Discounts\Command\DeleteDiscount\" />
+	  <Folder Include="Discounts\Command\CreateDiscount\" />
+	  <Folder Include="Discounts\Command\UpdateDiscount\" />
+	  <Folder Include="Discounts\Queries\GetAllDiscounts\" />
+	  <Folder Include="Discounts\Queries\GetByIdDiscounts\" />
+	  <Folder Include="OrderDetails\Command\CreateOrderDetail\" />
+	  <Folder Include="OrderDetails\Command\DeleteOrderDetail\" />
+	  <Folder Include="OrderDetails\Command\UpdateOrderDetail\" />
+	  <Folder Include="OrderDetails\Queries\GetAllOrderDetails\" />
+	  <Folder Include="OrderDetails\Queries\GetByIdOrderDetails\" />
+	  <Folder Include="PaymentDetails\Command\CreatePaymentDetail\" />
+	  <Folder Include="PaymentDetails\Command\DeletePaymentDetail\" />
+	  <Folder Include="PaymentDetails\Command\UpdatePaymentDetail\" />
+	  <Folder Include="PaymentDetails\Queries\GetAllPaymentDetails\" />
+	  <Folder Include="PaymentDetails\Queries\GetByIdPaymentDetails\" />
+	  <Folder Include="ProductInventories\Command\CreateProductInventory\" />
+	  <Folder Include="ProductInventories\Command\DeleteProductInventory\" />
+	  <Folder Include="ProductInventories\Command\UpdateProductInventory\" />
+	  <Folder Include="ProductInventories\Queries\GetAllProductInventories\" />
+	  <Folder Include="ProductInventories\Queries\GetByIdProductInventories\" />
+	  <Folder Include="Products\Command\CreateProduct\" />
+	  <Folder Include="Products\Command\DeleteProduct\" />
+	  <Folder Include="Products\Command\UpdateProduct\" />
+	  <Folder Include="Products\Queries\GetAllProducts\" />
+	  <Folder Include="Products\Queries\GetByIdProducts\" />
+	  <Folder Include="ShoppingSessions\Command\CreateShoppingSession\" />
+	  <Folder Include="ShoppingSessions\Command\DeleteShoppingSession\" />
+	  <Folder Include="ShoppingSessions\Command\UpdateShoppingSession\" />
+	  <Folder Include="ShoppingSessions\Queries\GetAllShoppingSessions\" />
+	  <Folder Include="ShoppingSessions\Queries\GetByIdShoppingSessions\" />
+	  <Folder Include="UserAddress\Command\CreateUserAddres\" />
+	  <Folder Include="UserAddress\Command\DeleteUserAddres\" />
+	  <Folder Include="UserAddress\Command\UpdateUserAddres\" />
+	  <Folder Include="UserAddress\Queries\GetAllUserAddress\" />
+	  <Folder Include="UserAddress\Queries\GetByIdUserAddress\" />
+	  <Folder Include="UserPayments\Command\CreateUserPayment\" />
+	  <Folder Include="UserPayments\Command\DeleteUserPayment\" />
+	  <Folder Include="UserPayments\Command\UpdateUserPayment\" />
+	  <Folder Include="UserPayments\Queries\GetAllUserPayments\" />
+	  <Folder Include="UserPayments\Queries\GetByIdUserPayments\" />
+	  <Folder Include="Users\Command\CreateUser\" />
+	  <Folder Include="Users\Command\DeleteUser\" />
+	  <Folder Include="Users\Command\UpdateUser\" />
+	  <Folder Include="Users\Queries\GetAllUsers\" />
+	  <Folder Include="Users\Queries\GetByIdUsers\" />
+	</ItemGroup>
+
 </Project>
