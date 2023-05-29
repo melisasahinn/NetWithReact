@@ -26,6 +26,7 @@ namespace NetWithReact.Application.CartItems.Command.CreateCartItem
             {
                 ShoppingSessionId = request.ShoppingSessionId,
                 ProductId = request.ProductId,
+                CreatedDateTime= DateTime.Now
             };
 
             var persistenceResult = _cartItemRepository.Add(cartItem);

@@ -18,11 +18,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Discounts\Command\DeleteDiscount\" />
-	  <Folder Include="Discounts\Command\CreateDiscount\" />
-	  <Folder Include="Discounts\Command\UpdateDiscount\" />
-	  <Folder Include="Discounts\Queries\GetAllDiscounts\" />
-	  <Folder Include="Discounts\Queries\GetByIdDiscounts\" />
 	  <Folder Include="OrderDetails\Command\CreateOrderDetail\" />
 	  <Folder Include="OrderDetails\Command\DeleteOrderDetail\" />
 	  <Folder Include="OrderDetails\Command\UpdateOrderDetail\" />
