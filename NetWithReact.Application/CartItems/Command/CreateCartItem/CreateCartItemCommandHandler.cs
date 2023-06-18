@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NetWithReact.Application.CartItems.Command.CreateCartItem
 {
-    public class CreateCartItemCommandHandler : IRequestHandler<CreateCartItemCommand, ErrorOr<CartItem>
+    public class CreateCartItemCommandHandler : IRequestHandler<CreateCartItemCommand, ErrorOr<CartItem>>
     {
         private readonly ICartItemRepository _cartItemRepository;
         public CreateCartItemCommandHandler(ICartItemRepository cartItemRepository)

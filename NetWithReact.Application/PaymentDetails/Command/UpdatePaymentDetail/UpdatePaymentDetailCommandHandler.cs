@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NetWithReact.Application.PaymentDetails.Command.UpdatePaymentDetail
 {
-    public class UpdatePaymentDetailCommandHandler : IRequestHandler<UpdatePaymentDetailCommand, ErrorOr<NetWithReact.Domain.Entities.PaymentDetails>
+    public class UpdatePaymentDetailCommandHandler : IRequestHandler<UpdatePaymentDetailCommand, ErrorOr<NetWithReact.Domain.Entities.PaymentDetails>>
     {
         private readonly IPaymentDetailsRepository _paymentDetailsRepository;
         public UpdatePaymentDetailCommandHandler(IPaymentDetailsRepository paymentDetailsRepository)

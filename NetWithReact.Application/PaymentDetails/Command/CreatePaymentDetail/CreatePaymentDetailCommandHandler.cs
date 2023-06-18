@@ -2,7 +2,6 @@
 using FluentValidation;
 using MediatR;
 using NetWithReact.Application.Common.Interfaces.Persistence;
-using NetWithReact.Domain.Entities;
 using NetWithReact.Domain.Errors;
 using System;
 using System.Collections.Generic;
